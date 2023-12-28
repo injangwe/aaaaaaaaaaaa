@@ -1,0 +1,106 @@
+.Header {
+  margin: 0 auto;
+  height: 20vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  direction: center;
+  background-color: gold;
+}
+
+#MainNadpic {
+  font-size: 5vh;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.main {
+  margin: 0 auto;
+}
+
+.menu {
+  width: 100vh;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+
+.Boeci {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  font-size: 20px;
+  min-width: 165px;
+  min-height: 270px;
+}
+
+.fighter-stats {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  min-width: 165px;
+  min-height: 270px;
+  padding: 5px;
+  border: 2px solid gold;
+  border-radius: 4px;
+  border-top: none;
+  border-right: none;
+}
+
+#Start {
+  height: 25vh;
+  width: 62%;
+  font-size: 50px;
+}
+
+.buttonsss {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+@keyframes border-gradint {
+  50% {
+    border-image: linear-gradient(
+      to right top,
+      gold 10%,
+      transparent 30%,
+      transparent 70%,
+      gold 90%
+    );
+    border-image-slice: 1;
+  }
+
+  100% {
+    border-image: linear-gradient(
+      to left top,
+      gold 10%,
+      transparent 30%,
+      transparent 70%,
+      gold 90%
+    );
+    border-image-slice: 1;
+  }
+}
+
+button {
+  border: 3px solid transparent;
+  transition: 1s;
+  animation: border-gradint 3s ease-in infinite;
+  border-image: linear-gradient(
+    to left top,
+    gold 10%,
+    transparent 30%,
+    transparent 70%,
+    gold 90%
+  );
+  border-image-slice: 1;
+  padding: 10px;
+  cursor: pointer;
+  background: none;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
